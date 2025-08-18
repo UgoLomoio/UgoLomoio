@@ -6,8 +6,7 @@
  [![arXiv](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/arxiv.svg)](https://arxiv.org/search/cs?searchtype=author&query=Lomoio,+U) |
 
 <summary>Bibliometrics of my publications</summary>
-<a href="https://scholar.google.com/citations?user=BigacsQAAAAJ"><img alt="My bibliometrics" src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/bibliometrics.svg"/></a>
-</details>
+<a href="https://scholar.google.com/citations?user=BigacsQAAAAJ"><img alt="My bibliometrics" src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/bibliometrics3.svg"/></a>
 
 ###
 
