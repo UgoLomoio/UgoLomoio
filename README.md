@@ -1,11 +1,10 @@
 <h2 align="left">Hi everyone👋! <br>My name is Ugo Lomoio, and I am currently a PhD Candidate in Digital Medicine at UMG, Catanzaro, Italy.</h2>
 
- [![Google Scholar](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/gs.svg)](http://scholar.google.com/citations?user=BigacsQAAAAJ) 
- [![ORCID](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/orcid.svg)](https://orcid.org/0000-0001-8150-0039) 
- [![ResearchGate](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/rg.svg)](https://www.researchgate.net/profile/Ugo-Lomoio) 
- [![arXiv](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/arxiv.svg)](https://arxiv.org/search/cs?searchtype=author&query=Lomoio,+U) |
+### 
 
-<a href="https://scholar.google.com/citations?user=BigacsQAAAAJ"><img alt="My bibliometrics" src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/bibliometrics3.svg"/></a>
+<div align="center">
+  <a href="https://scholar.google.com/citations?user=BigacsQAAAAJ"><img alt="My bibliometrics" src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/bibliometrics3.svg"/></a>
+</div>
 
 ###
 
@@ -31,6 +30,18 @@
   <a href="https://it.linkedin.com/in/ugo-lomoio" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
+ <a href="http://scholar.google.com/citations?user=BigacsQAAAAJ" target="_blank"> 
+  <img src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/gs.svg" height="35" alt="Google Scholar" /> 
+ </a> 
+ <a href="https://orcid.org/0000-0001-8150-0039" target="_blank"> 
+  <img src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/orcid.svg" height="35" alt="ORCID" /> 
+ </a>
+ <a href="https://www.researchgate.net/profile/Ugo-Lomoio" target="_blank">
+  <img src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/rg.svg" height="35" alt="ResearchGate" /> 
+ </a> 
+ <a href="https://arxiv.org/search/cs?searchtype=author&query=Lomoio,+U" target="_blank"> 
+  <img src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/arxiv.svg" height="35" alt="arXiv" /> 
+ </a> 
 </div>
 
 ###
