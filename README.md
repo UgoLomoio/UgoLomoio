@@ -1,12 +1,12 @@
 <h2 align="left">Hi everyone👋! <br>My name is Ugo Lomoio, and I am currently a PhD Candidate in Digital Medicine at UMG, Catanzaro, Italy.</h2>
 
- [![Google Scholar](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/images/gs.svg)](http://scholar.google.com/citations?user=BigacsQAAAAJ) 
- [![ORCID](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/images/orcid.svg)](https://orcid.org/0000-0001-8150-0039) 
- [![ResearchGate](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/images/rg.svg)](https://www.researchgate.net/profile/Ugo-Lomoio) 
- [![arXiv](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/images/arxiv.svg)](https://arxiv.org/search/cs?searchtype=author&query=Lomoio,+U) |
+ [![Google Scholar](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/gs.svg)](http://scholar.google.com/citations?user=BigacsQAAAAJ) 
+ [![ORCID](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/orcid.svg)](https://orcid.org/0000-0001-8150-0039) 
+ [![ResearchGate](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/rg.svg)](https://www.researchgate.net/profile/Ugo-Lomoio) 
+ [![arXiv](https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/arxiv.svg)](https://arxiv.org/search/cs?searchtype=author&query=Lomoio,+U) |
 
 <summary>Bibliometrics of my publications</summary>
-<a href="https://scholar.google.com/citations?user=BigacsQAAAAJ"><img alt="My bibliometrics" src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/images/bibliometrics.svg"/></a>
+<a href="https://scholar.google.com/citations?user=BigacsQAAAAJ"><img alt="My bibliometrics" src="https://raw.githubusercontent.com/UgoLomoio/UgoLomoio/master/bibliometrics.svg"/></a>
 </details>
 
 ###
