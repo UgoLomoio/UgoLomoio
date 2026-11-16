@@ -1,0 +1,87 @@
+name: Update README cards
+
+# Monthly: 1st of the month, 06:00 UTC. Also runnable by hand from the Actions tab.
+on:
+  schedule:
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+
+concurrency:
+  group: readme-cards
+  cancel-in-progress: false
+
+jobs:
+  # Third-party actions run here with a read-only token.
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Stats card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&theme=dracula&locale=en&hide_border=false
+          path: profile/stats.svg
+          token: ${{ secrets.README_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Top languages card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false
+          path: profile/top-langs.svg
+          token: ${{ secrets.README_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Trophy card
+        uses: vmbr0/github-profile-trophy-renewed@cf5fda8641c4dc8ec2f1b5f71e6b077de1008aea # V1.1.1
+        with:
+          username: ${{ github.repository_owner }}
+          output_path: profile/trophy.svg
+          token: ${{ secrets.README_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          theme: default
+
+      - name: GitFut card (monthly snapshot)
+        run: |
+          curl -fsSL --retry 3 -o profile/gitfut.png "https://gitfut.com/${{ github.repository_owner }}.png?country=IT"
+          file profile/gitfut.png | grep -q "PNG image data"
+
+      - name: Check outputs
+        run: |
+          for f in profile/stats.svg profile/top-langs.svg profile/trophy.svg; do
+            test -s "$f" && grep -q "<svg" "$f" || { echo "bad $f"; exit 1; }
+          done
+          ls -l profile
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: readme-cards
+          path: profile/
+          retention-days: 7
+
+  # Only this job can write to the repo; it runs no third-party code.
+  commit:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: readme-cards
+          path: profile
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/stats.svg profile/top-langs.svg profile/trophy.svg profile/gitfut.png
+          git commit -m "update README cards ($(date +%Y-%m))" || { echo "no changes"; exit 0; }
+          git pull --rebase origin main
+          git push origin HEAD:main
