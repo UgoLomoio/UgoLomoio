@@ -1,0 +1,15 @@
+{
+  "scholarID": "BigacsQAAAAJ",
+  "jsonOutputFile": "bibliometrics.json",
+  "svgConfig": [
+    {
+      "filename": "bibliometrics3.svg",
+      "background": "#010409",
+      "border": "rgba(56,139,253,0.4)",
+      "title": "#58a6ff",
+      "text": "#c9d1d9",
+      "include": ["total-cites", "five-year-cites", "most-cited", "h-index", "g-index",
+                  "w-index", "o-index", "h-median", "e-index", "r-index", "a-index"]
+    }
+  ]
+}
