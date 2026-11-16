@@ -1,4 +1,4 @@
-<h2 align="left">Hi everyone👋! <br> My name is Ugo Lomoio, I have a PhD in Digital Medicine at Magna Graecia University of Catanzaro. Currently researcher in AI in medicine at University of Calabria</h2>
+<h2 align="left">Hi everyone👋! <br> My name is Ugo Lomoio, I have a PhD in Digital Medicine at Magna Graecia University of Catanzaro. Currently post-doc AI in Medicine at Magna Graecia University of Catanzaro</h2>
 <h2 align="center"> My Portfolio: <a href="https://ugolomoio.github.io/">https://ugolomoio.github.io/</a> </h2>
 
 ### 
